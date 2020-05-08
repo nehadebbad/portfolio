@@ -1,0 +1,163 @@
+body {
+  overflow-x: hidden;
+}
+
+.navbar .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+section {
+  padding: 80px 0;
+}
+
+@media (max-width: 767.98px) {
+  section {
+    padding: 60px 0;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  text-align: center;
+  color: black;
+}
+
+
+.intro {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: #111;
+  min-height: 600px;
+  padding: 0;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  background-attachment: fixed;
+}
+
+.intro h1,
+.intro h2,
+.intro h3,
+.intro p {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.intro p {
+  font-size: 1.35rem;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 10;
+}
+
+@media (max-width: 767.98px) {
+  .content {
+    position: relative;
+    padding: 80px 0;
+    top: 0;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+#page-header {
+  height: 200px;
+  background: url('../img/wallpaper.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: black;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.heading {
+  margin-bottom: 20px;
+}
+
+.heading:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 20px 0 20px;
+  background: black;
+}
+
+#skills img {
+  margin-top: -250px; }
+
+p.social {
+  
+  margin-top: 20px;
+}
+
+p.social a {
+  margin: 0 10px 0 0;
+  color: #fff;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 19px;
+  line-height: 38px;
+  font-size: 15px;
+  text-align: center;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  vertical-align: bottom;
+}
+
+p.social a i {
+  vertical-align: bottom;
+  line-height: 38px;
+}
+
+p.social a.email {
+  background-color: #ccc;
+}
+
+p.social a.linkedin {
+  background-color: #333;
+}
+
+p.social a.github {
+  background-color: #aaa;
+}
+
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+
+
+
