@@ -9,8 +9,9 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
   <link rel="stylesheet" href="css/style.css">
-  <title>Portfolio</title>
+  <title>Website</title>
 </head>
 
 <!-- NAVIGATION BAR SECTION -->
@@ -22,16 +23,16 @@
         <div class="collapse navbar-collapse d-none d-md-block" id="navbarCollapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a href="#home" class="nav-link">Home</a>
+              <a href="#home" class="nav-link"><i class="fas fa-home"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a href="#skills" class="nav-link">Skills</a>
+              <a href="#skills" class="nav-link"><i class="fas fa-code"></i>Skills</a>
             </li>
             <li class="nav-item">
-              <a href="#testimonials" class="nav-link">Testimonials</a>
+              <a href="#work" class="nav-link"><i class="fas fa-briefcase"></i>Work</a>
             </li>
             <li class="nav-item">
-              <a href="#contact" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link"><i class="fas fa-envelope"></i>Contact</a>
             </li>
           </ul>
        </div>
@@ -61,7 +62,7 @@
       <div class="row">
         <div class="col">
           <div class="container pt-5">
-            <h1 class="display-4">Hello! I'm Neha Debbad.</h1>
+            <h1>Hello! I'm Neha Debbad.</h1>
             <p class="lead">
               I am a Master’s student from University of North Carolina at Charlotte majoring in Computer Science with specialization in Software Systems and Networks.
               I am an enthusiastic quick learner passionate about designing & developing RESTful applications. Core skills are Software Development Life Cycle
@@ -74,7 +75,7 @@
   </section>
 
   <!--HOME ICON SECTION  -->
-  <section id="home-icons" class="p-6">
+  <section id="home-icons" class="p-5">
     <div class="container">
       <div class="row">
         <div class="col-md-3 mb-4 text-center">
@@ -102,7 +103,7 @@
   </section>
 
   <!-- SKILLS SECTION -->
-  <section id="skills" style="background-color: #eee">
+  <section id="skills" class="mb-5">
     <div class="container clearfix">
       <div class="row">
         <div class="col-md-4">
@@ -190,21 +191,8 @@
   <!-- TESTIMONIALS SECTION -->
   <section id="testimonials" class="p-7 bg-dark text-white">
     <div class="container">
-      <h1 class="text-center display-4">Testimonials</h1>
       <div class="row text-center">
-        <div class="col-md-6">
-          <div>
-              <blockquote class="blockquote">
-                <p class="mb-0 lead">
-                  "I worked with Neha at Syntax. During her internship she modified C# code and created stored procedures for SLA Reporting and helped run the SLA process. Neha also worked on the customer portal where she created Vue.js views and components, utilizing InteliJ, Git, and Gitlab. These tasks were completed using a Scrum development process. It was a pleasure working with Neha. I would recommend her for similar projects." 
-                </p>
-                <footer class="blockquote-footer">David Froehling From
-                  <cite title="Company 2">Syntax</cite>
-                </footer>
-              </blockquote>
-            </div>
-        </div>
-        <div class="col-md-6">
+        <div class="col">
           <div>
             <blockquote class="blockquote">
               <p class="mb-0 lead">
@@ -220,30 +208,80 @@
     </div>
   </section>
 
+  <section id="testimonials" class="p-7 bg-light text-dark" style="border: 1px solid #ccc;">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <div>
+              <blockquote class="blockquote">
+                <p class="mb-0 lead">
+                  "I worked with Neha at Syntax. During her internship she modified C# code and created stored procedures for SLA Reporting and helped run the SLA process. Neha also worked on the customer portal where she created Vue.js views and components, utilizing InteliJ, Git, and Gitlab. These tasks were completed using a Scrum development process. It was a pleasure working with Neha. I would recommend her for similar projects." 
+                </p>
+                <footer class="blockquote-footer">David Froehling From
+                  <cite title="Company 2">Syntax</cite>
+                </footer>
+              </blockquote>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK SECTION -->
+  <section id="work" class="p-7 bg-dark text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col">
+          <div>
+            <p class="mb-0 lead">As a Software Developer Intern at Syntax Systems USA LP, 
+              my experience focused on application development in an Agile environment (scrum) 
+              where I worked on building reusable Vue.js views and components, implemented a filter using AWS Java SDK.
+              worked on extending webpack to aggregate licenses from third party dependencies,  
+              created server-side endpoints (Java), worked with MariaDB, worked on d3 for data visualization, worked on web sockets, 
+              worked on MySQL stored procedures and have written unit tests using Nightwatch, Mocha and Selenium. 
+              I also optimized the code efficiency of SLA reporting tool in C# by 60 times. </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- WORK GALLERY SECTION-->
+  <!-- <section id="gallery" class="py-5 mt-5"> 
+    <div class="container">
+      <h1 class="text-center">Recent Work</h1>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a href="https://quintessence03.netlify.app/index.html/560x560" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
+            data-width="560">
+            <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/561x561" data-toggle="lightbox" data-gallery="img-gallery" data-height="561"
+            data-width="561">
+            <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="https://source.unsplash.com/random/562x562" data-toggle="lightbox" data-gallery="img-gallery" data-height="562"
+            data-width="562">
+            <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  -->
+
   <!-- CONTACT SECTION -->
   <section id="contact">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card p-4">
-            <div class="card-body">
-              <h4>Get In Touch</h4>
-              <h4>Email</h4>
-              <p>nehadebbadg@outlook.com</p>
-              <p class="social">
-                <a href="#" title="" class="email"><i class="fas fa-envelope"></i></a>
-                <a href="https://github.com/nehadebbad" title="" class="github"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/nehadebbad/" title="" class="linkedin"><i class="fab fa-linkedin"></i></a>
-              </p>
-              <p>
-                <a href="downloads/resume.pdf" class="btn btn-success" download>
-                  <i class="fas fa-cloud"></i> Download Resume
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-8">
+        <div class="col">
           <div class="card p-4">
             <div class="card-body">
               <h3 class="text-center">Please fill the form to get in touch with me.</h3>
@@ -288,6 +326,12 @@
           </div>
         </div>
       </div>
+      <p class="social text-center mt-5">
+        <a href="#" title="" class="email"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/nehadebbad" title="" class="github"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/nehadebbad/" title="" class="linkedin"><i class="fab fa-linkedin"></i></a>
+      </p>
+      <p class="text-center">nehadebbadg@outlook.com</p>
     </div>
   </section>
 
@@ -309,6 +353,7 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
     // Get the current year for the copyright
@@ -329,6 +374,13 @@
         });
       }
     });
+
+    // Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+    
     
   </script>
 </body>
